@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal | Rajkumar Lokadhyaksha</title>
+    <style>
+        /* Part 7 & 8: CSS Selectors and Basic Styling */
+        body {
+            background-color: #f4f6f9;
+            color: #333333;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            border: 1px solid #dcdcdc;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            color: #1a365d;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #2b6cb0;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: #2b6cb0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #1a365d;
+            text-decoration: underline;
+        }
+
+        section {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            padding: 24px;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        th, td {
+            border: 1px solid #cbd5e0;
+            padding: 10px 14px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #edf2f7;
+            color: #2d3748;
+            font-weight: bold;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* Form Styling */
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #2d3748;
+        }
+
+        .inline-label {
+            display: inline;
+            font-weight: normal;
+            margin-left: 4px;
+            margin-right: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            max-width: 400px;
+            padding: 8px 12px;
+            border: 1px solid #cbd5e0;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .button-group {
+            margin-top: 20px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 10px;
+            border: 1px solid #cbd5e0;
+        }
+
+        input[type="submit"] {
+            background-color: #2b6cb0;
+            color: #ffffff;
+            border-color: #2b6cb0;
+        }
+
+        input[type="reset"] {
+            background-color: #e2e8f0;
+            color: #4a5568;
+        }
+
+        /* Class Selector Requirement */
+        .highlight {
+            color: #2b6cb0;
+            font-weight: bold;
+        }
+
+        /* ID Selector Requirement */
+        #student-name {
+            color: #1a365d;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        /* Bonus Challenge: Top Performer Badge */
+        .badge {
+            background-color: #38a169;
+            color: #ffffff;
+            padding: 4px 10px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 12px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #718096;
+            font-size: 13px;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Part 2: Header and Navigation -->
+    <header>
+        <h1>Student Portal</h1>
+        <p>Scaler School of Technology (2026-2030) &amp; BITS Pilani (B.Sc. Hons CS &amp; AI)</p>
+        <nav>
+            <a href="#profile">Profile</a>
+            <a href="#skills">Skills</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Part 3: Student Profile -->
+        <section id="profile">
+            <h2>Student Profile</h2>
+            <p>
+                <span id="student-name">Rajkumar Lokadhyaksha</span>
+                <!-- Bonus Challenge Badge -->
+                <span class="badge">Top Performer</span>
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td>Rajkumar Lokadhyaksha</td>
+                    </tr>
+                    <tr>
+                        <td>Student ID</td>
+                        <td>SST2026-CS042</td>
+                    </tr>
+                    <tr>
+                        <td>Program</td>
+                        <td class="highlight">Computer Science &amp; AI (Scaler School of Tech &amp; BITS Pilani)</td>
+                    </tr>
+                    <tr>
+                        <td>Year</td>
+                        <td>1st Year (2026-2030)</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>rajkumar.lokadhyaksha@sst.scaler.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Part 4: My Skills -->
+        <section id="skills">
+            <h2>My Skills</h2>
+            <p>Technical competencies developed across coursework and independent development:</p>
+            <ul>
+                <li>HTML5 (Semantic Web Architecture)</li>
+                <li>CSS3 (Box Model, Selectors, Styling)</li>
+                <li>JavaScript (Fundamentals &amp; DOM)</li>
+                <li>Python (Core Programming &amp; Scripting)</li>
+                <li>Git &amp; GitHub (Version Control)</li>
+                <li>Data Structures &amp; Algorithms</li>
+            </ul>
+        </section>
+
+        <!-- Part 5: Weekly Schedule -->
+        <section id="schedule">
+            <h2>Weekly Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>9:00 AM</th>
+                        <th>11:00 AM</th>
+                        <th>2:00 PM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML &amp; CSS</td>
+                        <td>Discrete Mathematics</td>
+                        <td>DSA Lab</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>CSS Layouts</td>
+                        <td>Computer Architecture</td>
+                        <td>AI Foundations</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>JavaScript Lab</td>
+                        <td>DSA &amp; Problem Solving</td>
+                        <td>Linear Algebra</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Database Management</td>
+                        <td>Web Engineering</td>
+                        <td>Project Lab</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Data Structures</td>
+                        <td>CSS Animations</td>
+                        <td>Hackathon / Workshop</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Part 6: Course Registration Form -->
+        <section id="register">
+            <h2>Course Registration</h2>
+            <form action="#" method="get">
+                <!-- Student Information -->
+                <div class="form-group">
+                    <label for="name">Student Name:</label>
+                    <input type="text" id="name" name="name" value="Rajkumar Lokadhyaksha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Student Email:</label>
+                    <input type="email" id="email" name="email" value="rajkumar.lokadhyaksha@sst.scaler.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="student_id">Student ID:</label>
+                    <input type="text" id="student_id" name="student_id" value="SST2026-CS042" required>
+                </div>
+
+                <!-- Course Selection -->
+                <div class="form-group">
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select Course</option>
+                        <option value="html-css">HTML &amp; CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="dsa">Data Structures</option>
+                        <option value="dbms">Database Management</option>
+                    </select>
+                </div>
+
+                <!-- Preferred Learning Mode -->
+                <div class="form-group">
+                    <label>Preferred Learning Mode:</label>
+                    <input type="radio" id="mode-online" name="learning_mode" value="online">
+                    <label for="mode-online" class="inline-label">Online</label>
+                    
+                    <input type="radio" id="mode-offline" name="learning_mode" value="offline" checked>
+                    <label for="mode-offline" class="inline-label">Offline</label>
+                </div>
+
+                <!-- Skills You Already Know -->
+                <div class="form-group">
+                    <label>Skills You Already Know:</label>
+                    <input type="checkbox" id="skill-html" name="skills" value="html" checked>
+                    <label for="skill-html" class="inline-label">HTML</label>
+                    
+                    <input type="checkbox" id="skill-css" name="skills" value="css" checked>
+                    <label for="skill-css" class="inline-label">CSS</label>
+                    
+                    <input type="checkbox" id="skill-js" name="skills" value="js">
+                    <label for="skill-js" class="inline-label">JavaScript</label>
+                    
+                    <input type="checkbox" id="skill-python" name="skills" value="python" checked>
+                    <label for="skill-python" class="inline-label">Python</label>
+                </div>
+
+                <!-- Form Buttons -->
+                <div class="button-group">
+                    <input type="submit" value="Submit Registration">
+                    <input type="reset" value="Reset Form">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Rajkumar Lokadhyaksha | Scaler School of Technology &amp; BITS Pilani</p>
+        <p>Built with Semantic HTML &amp; CSS | Lab Assignment 01</p>
+    </footer>
+
+</body>
+</html>

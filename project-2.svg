@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="portalBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <filter id="shadow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Device Frame (Light clean phone/tablet) -->
+  <rect x="80" y="20" width="440" height="660" rx="44" fill="#1e293b" stroke="#334155" stroke-width="6" filter="url(#shadow2)" />
+  <rect x="96" y="36" width="408" height="628" rx="36" fill="url(#portalBg)" />
+
+  <!-- Notch -->
+  <rect x="230" y="48" width="140" height="24" rx="12" fill="#0f172a" />
+
+  <!-- Portal Header -->
+  <rect x="110" y="86" width="380" height="52" rx="10" fill="#1e40af" />
+  <text x="130" y="118" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Student Portal</text>
+  <text x="370" y="118" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="11">Home • Profile • Courses</text>
+
+  <!-- Profile Card -->
+  <rect x="110" y="150" width="380" height="150" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="126" y="174" fill="#1e3a8a" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Student Profile</text>
+  <rect x="370" y="158" width="104" height="22" rx="11" fill="#ecfdf5" stroke="#10b981" />
+  <text x="422" y="173" fill="#047857" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">★ Top Performer</text>
+  
+  <!-- Table rows -->
+  <rect x="120" y="188" width="360" height="24" fill="#f1f5f9" />
+  <text x="130" y="204" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Name</text>
+  <text x="240" y="204" fill="#0f172a" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Rajkumar Lokadhyaksha</text>
+  
+  <text x="130" y="230" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Program</text>
+  <text x="240" y="230" fill="#2563eb" font-family="system-ui, sans-serif" font-size="11" font-weight="700">SST &amp; BITS Pilani (CS &amp; AI)</text>
+
+  <rect x="120" y="244" width="360" height="24" fill="#f1f5f9" />
+  <text x="130" y="260" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Year</text>
+  <text x="240" y="260" fill="#0f172a" font-family="system-ui, sans-serif" font-size="11">1st Year (2026-2030)</text>
+
+  <text x="130" y="284" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Status</text>
+  <text x="240" y="284" fill="#16a34a" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Active &amp; Enrolled</text>
+
+  <!-- Weekly Schedule Card -->
+  <rect x="110" y="312" width="380" height="150" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="126" y="336" fill="#1e3a8a" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Weekly Schedule</text>
+  <!-- Mini schedule table -->
+  <rect x="120" y="348" width="360" height="22" fill="#e2e8f0" />
+  <text x="130" y="363" fill="#334155" font-size="10" font-weight="700">Day</text>
+  <text x="200" y="363" fill="#334155" font-size="10" font-weight="700">9:00 AM</text>
+  <text x="290" y="363" fill="#334155" font-size="10" font-weight="700">11:00 AM</text>
+  <text x="390" y="363" fill="#334155" font-size="10" font-weight="700">2:00 PM</text>
+
+  <text x="130" y="386" fill="#0f172a" font-size="10" font-weight="600">Mon</text>
+  <text x="200" y="386" fill="#2563eb" font-size="10">HTML &amp; CSS</text>
+  <text x="290" y="386" fill="#475569" font-size="10">Discrete Math</text>
+  <text x="390" y="386" fill="#059669" font-size="10">DSA Lab</text>
+
+  <rect x="120" y="396" width="360" height="20" fill="#f8fafc" />
+  <text x="130" y="410" fill="#0f172a" font-size="10" font-weight="600">Tue</text>
+  <text x="200" y="410" fill="#2563eb" font-size="10">Flexbox Layout</text>
+  <text x="290" y="410" fill="#475569" font-size="10">Computer Arch</text>
+  <text x="390" y="410" fill="#059669" font-size="10">AI Workshop</text>
+
+  <text x="130" y="434" fill="#0f172a" font-size="10" font-weight="600">Wed</text>
+  <text x="200" y="434" fill="#2563eb" font-size="10">JavaScript</text>
+  <text x="290" y="434" fill="#475569" font-size="10">Data Structures</text>
+  <text x="390" y="434" fill="#059669" font-size="10">Project Lab</text>
+
+  <!-- Course Registration Form Card -->
+  <rect x="110" y="474" width="380" height="170" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="126" y="498" fill="#1e3a8a" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Course Registration</text>
+  <!-- Form fields -->
+  <rect x="126" y="510" width="168" height="28" rx="6" fill="#f8fafc" stroke="#94a3b8" />
+  <text x="136" y="528" fill="#475569" font-size="10">Select Course: Data Structures</text>
+  
+  <rect x="304" y="510" width="176" height="28" rx="6" fill="#f8fafc" stroke="#94a3b8" />
+  <text x="314" y="528" fill="#475569" font-size="10">Mode: (•) Offline</text>
+
+  <!-- Skills chips -->
+  <text x="126" y="560" fill="#64748b" font-size="10" font-weight="600">Skills Verified: [✓ HTML] [✓ CSS] [✓ Git]</text>
+
+  <!-- Action button -->
+  <rect x="126" y="582" width="120" height="32" rx="6" fill="#2563eb" />
+  <text x="186" y="602" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">Submit Register</text>
+  
+  <rect x="256" y="582" width="70" height="32" rx="6" fill="#f1f5f9" stroke="#cbd5e1" />
+  <text x="291" y="602" fill="#475569" font-size="11" font-weight="600" text-anchor="middle">Reset</text>
+</svg>

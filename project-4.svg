@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="100%" height="100%">
+  <defs>
+    <filter id="laptopShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Laptop Lid & Screen -->
+  <rect x="70" y="40" width="560" height="350" rx="18" fill="#1e293b" stroke="#475569" stroke-width="3" filter="url(#laptopShadow)" />
+  <!-- Screen Bezel -->
+  <rect x="85" y="55" width="530" height="320" rx="10" fill="#ffffff" />
+  
+  <!-- Webpage inside laptop matching reference "Boost Productivity with the Best Platform" -->
+  <!-- Browser top nav -->
+  <rect x="85" y="55" width="530" height="36" fill="#f8fafc" />
+  <circle cx="105" cy="73" r="5" fill="#ef4444" />
+  <circle cx="120" cy="73" r="5" fill="#f59e0b" />
+  <circle cx="135" cy="73" r="5" fill="#10b981" />
+  <rect x="180" y="63" width="260" height="20" rx="6" fill="#e2e8f0" />
+  <text x="310" y="77" fill="#64748b" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">https://saas-productivity.dev</text>
+
+  <!-- Hero Content inside Mockup -->
+  <text x="120" y="140" fill="#0f172a" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Boost Productivity with</text>
+  <text x="120" y="166" fill="#2563eb" font-family="system-ui, sans-serif" font-size="20" font-weight="800">the Best Platform</text>
+  <text x="120" y="195" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Streamline agile sprints, automate team metrics, and track progress.</text>
+  
+  <rect x="120" y="215" width="110" height="30" rx="6" fill="#2563eb" />
+  <text x="175" y="234" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Get Started</text>
+
+  <!-- Analytics Mini Chart inside Mockup -->
+  <rect x="360" y="115" width="230" height="150" rx="12" fill="#f1f5f9" stroke="#cbd5e1" />
+  <text x="380" y="140" fill="#1e293b" font-size="12" font-weight="700">Sprint Analytics</text>
+  <!-- Chart bars -->
+  <rect x="385" y="200" width="20" height="50" rx="4" fill="#93c5fd" />
+  <rect x="415" y="170" width="20" height="80" rx="4" fill="#3b82f6" />
+  <rect x="445" y="185" width="20" height="65" rx="4" fill="#60a5fa" />
+  <rect x="475" y="155" width="20" height="95" rx="4" fill="#2563eb" />
+  <rect x="505" y="165" width="20" height="85" rx="4" fill="#1d4ed8" />
+  <rect x="535" y="145" width="20" height="105" rx="4" fill="#10b981" />
+
+  <!-- Laptop Base -->
+  <path d="M 40 390 L 660 390 L 690 415 L 10 415 Z" fill="#94a3b8" />
+  <rect x="300" y="390" width="100" height="8" rx="4" fill="#64748b" />
+</svg>

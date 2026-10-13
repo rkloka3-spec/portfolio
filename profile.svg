@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="40%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fcd34d" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="jacketGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background with subtle lighting -->
+  <rect width="600" height="750" rx="36" fill="url(#bgGrad)" />
+  
+  <!-- Subtle architectural / tech lines in background -->
+  <g opacity="0.15" stroke="#fff" stroke-width="1.5">
+    <line x1="50" y1="0" x2="50" y2="750" />
+    <line x1="150" y1="0" x2="150" y2="750" />
+    <line x1="250" y1="0" x2="250" y2="750" />
+    <line x1="350" y1="0" x2="350" y2="750" />
+    <line x1="450" y1="0" x2="450" y2="750" />
+    <line x1="550" y1="0" x2="550" y2="750" />
+    <circle cx="480" cy="180" r="140" fill="none" stroke-width="2" />
+    <circle cx="480" cy="180" r="90" fill="none" stroke-width="1" />
+  </g>
+
+  <!-- Ambient light glow -->
+  <circle cx="300" cy="220" r="220" fill="#6366f1" opacity="0.25" filter="blur(40px)" />
+
+  <!-- Developer Silhouette / Character Artwork -->
+  <!-- Shoulders & Coat -->
+  <path d="M 120 750 C 140 590, 200 520, 260 500 L 340 500 C 400 520, 460 590, 480 750 Z" fill="url(#jacketGrad)" filter="url(#softShadow)" />
+  
+  <!-- Inner shirt collar -->
+  <path d="M 260 500 L 300 560 L 340 500 Z" fill="#f8fafc" />
+  <path d="M 285 530 L 300 620 L 315 530 Z" fill="#6366f1" />
+
+  <!-- Neck -->
+  <rect x="272" y="410" width="56" height="100" rx="20" fill="url(#skinGrad)" />
+
+  <!-- Head / Face -->
+  <ellipse cx="300" cy="340" rx="76" ry="92" fill="url(#skinGrad)" filter="url(#softShadow)" />
+  
+  <!-- Modern Hair -->
+  <path d="M 216 330 C 210 240, 250 190, 320 190 C 370 190, 400 220, 390 280 C 380 230, 340 215, 300 220 C 260 225, 230 260, 224 330 Z" fill="#0f172a" />
+  <path d="M 220 280 C 240 210, 310 200, 370 210 C 390 213, 395 240, 395 270 C 375 250, 350 240, 320 245 C 275 250, 240 290, 220 280 Z" fill="#1e293b" />
+
+  <!-- Glasses (Modern Developer Look) -->
+  <g stroke="#0f172a" stroke-width="5" fill="none">
+    <rect x="245" y="315" width="46" height="34" rx="10" stroke="#1e293b" fill="#ffffff" fill-opacity="0.1" />
+    <rect x="309" y="315" width="46" height="34" rx="10" stroke="#1e293b" fill="#ffffff" fill-opacity="0.1" />
+    <line x1="291" y1="330" x2="309" y2="330" stroke="#1e293b" stroke-width="4" />
+    <!-- Glasses reflection accent -->
+    <line x1="252" y1="322" x2="266" y2="336" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+    <line x1="316" y1="322" x2="330" y2="336" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+  </g>
+
+  <!-- Smile -->
+  <path d="M 282 388 Q 300 404 318 388" fill="none" stroke="#78350f" stroke-width="3.5" stroke-linecap="round" />
+
+  <!-- Floating Tech Badges / Pills -->
+  <!-- Badge 1: Scaler School of Tech -->
+  <g transform="translate(40, 80)" filter="url(#softShadow)">
+    <rect width="180" height="44" rx="22" fill="#0f172a" fill-opacity="0.85" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="26" cy="22" r="8" fill="#38bdf8" />
+    <text x="44" y="27" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600">SST • 2026-2030</text>
+  </g>
+
+  <!-- Badge 2: BITS Pilani CS & AI -->
+  <g transform="translate(370, 110)" filter="url(#softShadow)">
+    <rect width="190" height="44" rx="22" fill="#0f172a" fill-opacity="0.85" stroke="#a855f7" stroke-width="1.5" />
+    <circle cx="26" cy="22" r="8" fill="#a855f7" />
+    <text x="44" y="27" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600">BITS Pilani CS &amp; AI</text>
+  </g>
+
+  <!-- Badge 3: Web Dev & AI -->
+  <g transform="translate(60, 640)" filter="url(#softShadow)">
+    <rect width="210" height="52" rx="26" fill="#1e1b4b" fill-opacity="0.9" stroke="url(#accentGlow)" stroke-width="2" />
+    <text x="28" y="32" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700">✦ Rajkumar Lokadhyaksha</text>
+  </g>
+</svg>
